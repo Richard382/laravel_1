@@ -1,0 +1,40 @@
+.toastify {
+    position: fixed;
+    max-width: 727px;
+    width: 100%;
+    z-index: 100;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 20px;
+
+    &-center {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    &-top {
+        top: 80px;
+    }
+
+    &--success {
+        background: #00bd6c;
+        color: white;
+    }
+
+    &--error {
+        background: #ff4b55;
+        color: white;
+    }
+
+    &--info {
+        background: #37387f;
+        color: white;
+    }
+
+    .toast-close {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+}

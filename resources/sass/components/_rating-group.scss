@@ -1,0 +1,11 @@
+.rating-group {
+    margin-top: $m-spacer;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    .v-icon {
+        margin-right: $s-spacer / 2;
+    }
+}

@@ -1,0 +1,33 @@
+.v-select {
+    &--single {
+        &.v-input--is-dirty .v-select__selections input {
+            display: none;
+        }
+
+        .v-select__selection {
+            margin: 0;
+            padding: $form-field-paddings;
+        }
+    }
+
+    &--is-menu-active {
+        .v-input {
+            &__icon {
+                &--append {
+                    .v-icon {
+                        transform: rotate(0deg) !important;
+
+                        &:before {
+                            content: "\F156";
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .v-input__append-inner {
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,11 @@
+.simple {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    th,
+    td {
+        padding: $m-spacer;
+        border-bottom: 1px solid $clr-grey-medium;
+    }
+}

@@ -1,0 +1,9 @@
+.v-tabs {
+    &--register {
+        .v-tab {
+            &--active {
+                color: $clr-green;
+            }
+        }
+    }
+}

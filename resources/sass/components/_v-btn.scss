@@ -1,0 +1,55 @@
+.v-btn {
+    $btn-size: 42px;
+
+    &.primary {
+        border-radius: 2px;
+    }
+
+    &.red {
+        color: $clr-white;
+    }
+
+    &.dark-blue {
+        background-color: $clr-blue-minsk !important;
+        color: $clr-white;
+    }
+
+    &:not(.v-btn--round).v-size--small {
+        height: $m-spacer*2;
+    }
+
+    &:not(&--round).v-size--default {
+        height: $btn-size;
+    }
+
+    &.v-size--default,
+    &.v-size--large {
+        font-size: $fz-small;
+        font-weight: $fw-semi-bold;
+        letter-spacing: $fls-vsmall;
+        line-height: $flh-medium;
+    }
+
+    &--back-to-top {
+        $btt-position: $l-spacer;
+
+        position: fixed;
+        bottom: $btt-position;
+        right: $btt-position;
+    }
+
+    &--flat {
+        min-width: auto !important;
+        height: auto !important;
+        padding: 0 !important;
+        text-decoration: underline;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &--nominwidth {
+        min-width: auto !important;
+    }
+}

@@ -1,0 +1,17 @@
+.v-list {
+    &--small {
+        .v-list-item {
+            min-height: auto;
+
+            &__title {
+                color: $clr-blue-minsk;
+
+                @include inline-link;
+            }
+
+            &__content {
+                padding: 6px 0;
+            }
+        }
+    }
+}

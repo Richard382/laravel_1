@@ -1,0 +1,21 @@
+h1 {
+    font-weight: $fw-regular;
+    margin-bottom: $m-spacer * 2;
+}
+
+h2 {
+    font-weight: $fw-regular;
+    font-size: $fz-large;
+    line-height: $flh-medium;
+    letter-spacing: $fls-medium;
+    margin-bottom: $m-spacer;
+    color: $clr-blue-minsk;
+
+    small {
+        display: block;
+        font-size: $fz-regular;
+        color: $clr-grey-darker;
+        letter-spacing: $fls-msmall;
+        line-height: $flh-medium;
+    }
+}

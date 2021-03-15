@@ -1,0 +1,9 @@
+.v-content {
+    &--cont {
+        .v-content {
+            &__wrap {
+                padding: $l-spacer * 2 0;
+            }
+        }
+    }
+}

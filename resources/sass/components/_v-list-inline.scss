@@ -1,0 +1,23 @@
+.v-list {
+    &--inline {
+        padding: 0;
+
+        .v-list-item {
+            display: inline-block;
+            min-height: auto;
+            padding: 0;
+            float: left;
+            clear: left;
+
+            &__content {
+                padding: 3px 0;
+            }
+
+            &__title {
+                color: $clr-white;
+
+                @include inline-link;
+            }
+        }
+    }
+}

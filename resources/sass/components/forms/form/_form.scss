@@ -1,0 +1,19 @@
+.form {
+    $form-spacer: $m-spacer;
+    $form-field-radius: 2px;
+    $form-field-border-width: 1px;
+    $form-field-border-color: rgba(165, 173, 187, 0.5);
+    $form-label-color: $clr-grey-darker;
+    $form-field-focus-color: $clr-green;
+    $form-field-paddings: $s-spacer $l-spacer;
+
+    @import 'v-divider';
+    @import 'v-input';
+    @import 'checkbox-group';
+    @import 'v-btn';
+    @import 'v-select';
+    @import 'v-chip';
+    @import 'file-upload';
+    @import 'multiple-file-upload';
+    @import 'v-alert';
+}

@@ -1,0 +1,49 @@
+.inquiry-info {
+    display: block;
+
+    &__service {
+        font-size: $fz-regular;
+    }
+
+    &__property_type {
+        font-size: $fz-small;
+    }
+
+    &__service,
+    &__property_name {
+        display: block;
+    }
+
+    & + .inquiry-info {
+        margin-top: $se-spacer;
+    }
+}
+
+.inquiry-tag {
+    background-color: $clr-grey-light;
+    font-weight: bold;
+    font-size: 13px;
+    display: inline-block;
+    padding: 2px 10px;
+    margin-right: 10px;
+}
+
+.inquiry-id {
+    color: $clr-grey-light;
+    display: inline-block;
+}
+
+.inquiry-data {
+    list-style: none;
+    padding-left: 0 !important;
+    margin-top: 10px;
+
+    li {
+        margin-bottom: 3px;
+    }
+
+    span {
+        color: $clr-grey-darker;
+        font-weight: bold;
+    }
+}

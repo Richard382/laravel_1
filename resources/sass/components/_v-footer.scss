@@ -1,0 +1,22 @@
+.v-footer {
+    $blue-spacing: $m-spacer*2;
+
+    padding: $blue-spacing 0 0 0;
+
+    .socials {
+        &__link + .socials__link {
+            margin-left: $l-spacer;
+        }
+    }
+
+    &__bottom {
+        background-color: $clr-white;
+        color: $clr-blue-minsk;
+        font-size: $fz-small;
+        font-weight: $fw-semi-bold;
+        margin-top: $blue-spacing;
+        padding: $m-spacer 0;
+        text-align: center;
+        width: 100%;
+    }
+}

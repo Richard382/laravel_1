@@ -1,0 +1,9 @@
+.list-item {
+    &__title {
+        padding-bottom: $l-spacer;
+        margin-bottom: $l-spacer;
+        border-bottom: 1px solid $clr-grey-medium;
+
+        @include big-label;
+    }
+}

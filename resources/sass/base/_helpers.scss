@@ -1,0 +1,13 @@
+.label-item {
+    @include label-style
+}
+
+.section {
+    $section-spacer: $m-spacer * 2;
+    padding-top: $section-spacer;
+    padding-bottom: $section-spacer;
+
+    &__headline {
+        margin-bottom: $section-spacer;
+    }
+}

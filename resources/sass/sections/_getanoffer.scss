@@ -1,0 +1,22 @@
+.getanoffer {
+    background: url('/images/background.png') rgba(34, 31, 55, 0.4);
+    background-size: cover;
+    color: $clr-white;
+    max-width: $cnt-max;
+    margin: 0 auto;
+    border-bottom-left-radius: 20px;
+
+    &__headline-cont {
+        padding: 0 $l-spacer;
+        max-width: 300px;
+
+        h1 {
+            text-shadow: 0 0 8px rgb(0 0 0 / 0.6);
+        }
+    }
+
+    .container {
+        padding-top: $l-spacer * 2;
+        padding-bottom: $l-spacer * 2.5;
+    }
+}

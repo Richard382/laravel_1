@@ -1,0 +1,33 @@
+.v-list {
+    &--header {
+        padding: 0;
+
+        .v-list-item {
+            border-bottom: 1px solid $clr-grey-light;
+
+            &--button + .v-list-item,
+            &--spacer-top,
+            &--spacer-bot + .v-list-item {
+                border-top: 1px solid $clr-grey-light;
+            }
+
+            &--logout .v-list-item__title {
+                color: $clr-red;
+            }
+
+            &__title {
+                font-size: $fz-regular !important;
+            }
+        }
+
+        .v-list-item--button {
+            padding: 0;
+            margin-bottom: $s-spacer*2;
+
+            .v-list-item__content {
+                padding: $l-spacer;
+                border-bottom: 1px solid $clr-grey-light;
+            }
+        }
+    }
+}

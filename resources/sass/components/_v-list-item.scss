@@ -1,0 +1,36 @@
+.v-list-item {
+    padding: 0 20px;
+
+    &__profile {
+        $avatar-size: 36px;
+
+        display: flex;
+        align-items: center;
+
+        &-image {
+            width: $avatar-size;
+            height: $avatar-size;
+            display: block;
+            border-radius: 100%;
+            border: 2px solid $clr-green;
+            background-size: cover;
+            background-position: center center;
+            flex: 1 1 $avatar-size;
+            min-width: $avatar-size;
+        }
+
+        &-name {
+            margin-left: $m-spacer;
+            font-size: $fz-small;
+            flex: 1 1 100%;
+        }
+    }
+
+    &--spacer-top {
+        margin-top: $l-spacer;
+    }
+
+    &--spacer-bot {
+        margin-bottom: $l-spacer;
+    }
+}

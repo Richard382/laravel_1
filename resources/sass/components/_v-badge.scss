@@ -1,0 +1,16 @@
+.v-badge {
+    $root: '.v-badge';
+
+    &--bell {
+        #{$root}__badge {
+            right: -3px;
+            font-size: 8px;
+            top: -4px;
+            border-radius: 0;
+            padding: 0 3px;
+            min-width: auto;
+            height: 12px;
+            line-height: 12px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.container {
+    max-width: $cnt-max;
+    padding: 0 $l-spacer;
+
+    &--fluid {
+        max-width: 100%;
+    }
+}
+
+.col {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.getanoffer .text-center h1 , .getanoffer .text-center span { text-shadow: 0 5px 4px rgba(0, 0, 0, 0.6);} .page-title {font-size: 26px; font-weight: 600;} .v-list-item__content .sideBarMenu  {margin-top: 20px;} .video-responsive iframe{left: 0;  top: 0;  height: 100%; width: 100%; position: absolute;} .video-responsive {overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0;} 

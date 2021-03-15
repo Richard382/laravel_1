@@ -1,0 +1,26 @@
+.multiple-file-upload {
+    margin-top: $form-spacer * 2;
+
+    &__label {
+        @include label-style;
+    }
+
+    &__sub {
+        @include info-style;
+    }
+
+    &__error {
+        @include error-style;
+    }
+
+    &__files {
+        margin: $form-spacer -10px -20px -10px;
+
+        .v-image {
+            float: left;
+            margin: 0 10px 20px;
+        }
+
+        @include clearfix()
+    }
+}

@@ -1,0 +1,19 @@
+.joined-items {
+    border-radius: 6px;
+    padding: $l-spacer;
+    background-color: $clr-white;
+    box-shadow: 0 4px 18px 0 rgba(34, 31, 55, 0.1);
+
+    &__item {
+        &-label {
+            display: block;
+            margin-bottom: $l-spacer;
+        }
+    }
+
+    &__item + &__item {
+        margin-top: $m-spacer * 2;
+        padding-top: $m-spacer * 2;
+        border-top: 1px solid $clr-grey-medium;
+    }
+}

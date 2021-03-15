@@ -1,0 +1,25 @@
+&--custom-checkbox {
+    &.v-input--is-label-active {
+        .v-input--selection-controls__input {
+            background-image: url("/images/checked.png");
+        }
+    }
+
+    .v-input--selection-controls__input {
+        background-position: 4px center;
+        background-image: url("/images/unchecked.png");
+    }
+
+    .v-label {
+        @include label-style;
+
+        a {
+            color: initial;
+            text-decoration: underline;
+        }
+
+        &:focus {
+            color: $form-field-focus-color;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.inquiries {
+    color: $clr-blue-minsk;
+
+    @import 'list-item';
+
+    .v-btn {
+        margin-top: $m-spacer * 2;
+    }
+
+    .headline {
+        margin-bottom: $m-spacer * 2;
+    }
+
+    &__list {
+        &__meanings {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid $clr-grey-light;
+
+            .flex {
+                position: relative;
+                padding-left: 30px;
+                text-transform: uppercase;
+
+                &:before {
+                    content: '';
+                    width: 20px;
+                    display: block;
+                    height: 4px;
+                    top: 50%;
+                    margin-top: -2px;
+                    position: absolute;
+                    left: 0;
+                }
+
+                &.searching:before {
+                    background-color: $clr-red;
+                }
+
+                &.suggest:before {
+                    background-color: $clr-blue-light;
+                }
+
+                &.other:before {
+                    background-color: $clr-grey-darker;
+                }
+            }
+        }
+    }
+
+    &__list-item {
+        padding: $l-spacer;
+        background-color: $clr-white;
+        box-shadow: 0 4px 18px 0 rgba(34, 31, 55, 0.1);
+        border-radius: 6px;
+        margin-top: $m-spacer;
+
+        &--offer {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &--short {
+            padding: 10px 20px;
+
+            .inquiry-info__service {
+                margin-top: 5px;
+            }
+
+            .list-item__counter {
+                position: relative;
+                right: auto;
+                top: auto;
+            }
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__list-loader {
+        text-align: center;
+        margin-top: $m-spacer * 2;
+    }
+
+    &__list-filter {
+        .v-text-field input {
+            background: none !important;
+        }
+    }
+
+    &__list-label {
+        @include big-label;
+
+        color: $clr-grey-darker;
+    }
+
+    &__list-drawer {
+        &-title {
+            padding: $s-spacer + $m-spacer $l-spacer;
+            border-bottom: 1px solid $clr-grey-light;
+
+            @include label-style;
+        }
+
+        &-filters {
+            padding: $s-spacer + $m-spacer $l-spacer;
+        }
+
+        .v-input:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__list-filter + &__list-item,
+    &__list-label,
+    &__list-pagination {
+        margin-top: $m-spacer * 2;
+    }
+}

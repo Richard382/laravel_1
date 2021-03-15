@@ -1,0 +1,9 @@
+.payment {
+    &__methods {
+        margin-top: $l-spacer;
+    }
+
+    &__methods form {
+        margin-top: $m-spacer;
+    }
+}

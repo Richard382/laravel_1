@@ -1,0 +1,30 @@
+html {
+    font-size: $fz-regular;
+    font-family: $ff-roboto;
+    line-height: $flh-regular;
+    color: $clr-blue-dark;
+}
+
+a {
+    text-decoration: none;
+
+    &.link {
+        color: $clr-blue-dark !important;
+
+        &--bold {
+            font-weight: bold;
+        }
+
+        &--underlined {
+            text-decoration: underline;
+        }
+    }
+
+    &.low {
+        color: #a5adbb !important;
+    }
+}
+
+[v-cloak] {
+    display: none;
+}

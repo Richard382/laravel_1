@@ -1,0 +1,11 @@
+.v-btn {
+    margin-top: $form-spacer;
+
+    &--submit {
+        margin-top: $form-spacer * 2;
+    }
+
+    &--no-gutter {
+        margin-top: 0;
+    }
+}

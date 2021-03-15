@@ -1,0 +1,4 @@
+@mixin error-style {
+    @include info-style;
+    color: $clr-red;
+}

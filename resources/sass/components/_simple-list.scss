@@ -1,0 +1,17 @@
+.simple-list {
+    padding-left: 0 !important;
+    padding-top: $l-spacer;
+    list-style: none;
+
+    &__item {
+        margin-top: $s-spacer;
+
+        &-link {
+            color: $clr-blue-minsk !important;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

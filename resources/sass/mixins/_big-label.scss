@@ -1,0 +1,6 @@
+@mixin big-label {
+    font-size: $fz-regular;
+    letter-spacing: $fls-msmall;
+    line-height: $flh-smedium;
+    font-weight: $fw-bold;
+}

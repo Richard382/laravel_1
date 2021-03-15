@@ -1,0 +1,19 @@
+.v-toolbar {
+    $tb-icon-size: 22px;
+    &--header {
+        .v-toolbar__content {
+            padding: 4px 20px;
+        }
+
+        .v-toolbar__title > a {
+            color: $clr-white;
+            font-size: $fz-normal;
+            line-height: $flh-semi-small;
+            text-transform: uppercase;
+        }
+
+        .v-image {
+            max-width: $tb-icon-size;
+        }
+    }
+}

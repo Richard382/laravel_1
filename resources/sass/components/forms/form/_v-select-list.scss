@@ -1,0 +1,20 @@
+.v-select-list {
+    .v-list {
+        &-item {
+            border-bottom: 1px solid $clr-grey-light;
+            min-height: auto;
+
+            &__content {
+                padding: 8px 0;
+            }
+
+            &__action {
+                margin: 4px 0;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

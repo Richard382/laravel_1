@@ -1,0 +1,106 @@
+.form {
+    &--getanoffer {
+        $form-spacer: 15px;
+        $form-border-radius: 2px;
+        $form-field-height: 42px;
+        $form-field-size: 18px;
+        $form-field-font-color: #3D3F4B;
+
+        .v-select .v-input__append-inner {
+            margin-top: 0;
+        }
+
+        .v-text-field.v-text-field--enclosed .v-text-field__details {
+            margin-bottom: $form-spacer;
+        }
+
+        .v-text-field.v-text-field--solo .v-input__control {
+            min-height: $form-field-height;
+        }
+
+        .v-text-field--solo>.v-input__control>.v-input__slot {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: $form-border-radius;
+            //border: 1px solid $form-field-font-color;
+            box-shadow: none !important;
+        }
+
+        .v-btn.v-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+            background-color: $clr-green !important;
+            opacity: 0.7;
+            color: $clr-white !important;
+        }
+
+        .v-select__selection {
+            &--comma {
+                font-size: $form-field-size;
+                letter-spacing: $fls-vsmall;
+                line-height: $flh-medium;
+                color: $form-field-font-color !important;
+            }
+        }
+
+        .v-select__selections {
+            .caption {
+                color: $form-field-font-color !important;
+            }
+        }
+
+        .v-input input,
+        .v-select__selections  input {
+            font-size: $form-field-size;
+            letter-spacing: $fls-vsmall;
+            line-height: $flh-medium;
+            color: $form-field-font-color !important;
+
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $form-field-font-color;
+                opacity: 1; /* Firefox */
+                letter-spacing: $fls-vsmall;
+                line-height: $flh-medium;
+            }
+
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: $form-field-font-color;
+                letter-spacing: $fls-vsmall;
+                line-height: $flh-medium;
+            }
+
+            &::-ms-input-placeholder { /* Microsoft Edge */
+                color: $form-field-font-color;
+                letter-spacing: $fls-vsmall;
+                line-height: $flh-medium;
+            }
+        }
+
+        .v-input {
+            &--is-focused.v-text-field--justt input {
+                &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: transparent !important;
+                }
+
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: transparent !important;
+                }
+
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                    color: transparent !important;
+                }
+            }
+        }
+    }
+}
+
+
+.v-application .v-select .v-input__icon--append .v-icon {
+    font-size: 35px;
+    margin-left: -19px;
+}
+
+.v-application .form--getanoffer .v-select .v-input__icon--append .v-icon {
+    color: #3D3F4B !important;
+
+    &.primary--text {
+        color: #3D3F4B !important;
+    }
+}

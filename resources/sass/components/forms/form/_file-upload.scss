@@ -1,0 +1,29 @@
+.file-upload {
+    margin-top: $form-spacer * 2;
+
+    &__image {
+        border-radius: $brdr-radius / 2;
+        overflow: hidden;
+        margin-right: $l-spacer;
+    }
+
+    &__sub {
+        @include info-style;
+    }
+
+    &__error {
+        @include error-style;
+    }
+
+    &__text {
+
+    }
+
+    &__label {
+        @include label-style;
+    }
+
+    + .file-upload {
+        margin-top: $form-spacer;
+    }
+}

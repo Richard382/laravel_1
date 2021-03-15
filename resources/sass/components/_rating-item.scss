@@ -1,0 +1,21 @@
+.rating-item {
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: $s-spacer;
+
+        &-name {
+            width: 100%;
+            color: $clr-green;
+        }
+    }
+
+    &__review {
+        margin-top: $m-spacer;
+    }
+
+    &__review .label-item,
+    &__objects .label-item {
+        margin-bottom: 0 !important;
+    }
+}

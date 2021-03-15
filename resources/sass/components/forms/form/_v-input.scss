@@ -1,0 +1,175 @@
+.v-input {
+    @import 'v-input/custom-checkbox';
+
+    padding-top: 0;
+
+    &__slot {
+        margin-bottom: 0 !important;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    &__append-inner {
+        &:last-child {
+            margin-right: $s-spacer;
+        }
+    }
+
+    &__append-outer {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .v-btn {
+            margin-top: 0;
+            min-width: auto;
+            box-shadow: none !important;
+        }
+    }
+
+    .v-messages,
+    .v-text-field__details {
+        min-height: auto;
+    }
+
+    .v-messages__message {
+        @include info-style;
+
+        margin-top: 5px;
+    }
+
+    &--checkbox {
+        margin-top: $form-spacer;
+    }
+
+    &--labeled {
+        margin-top: $form-spacer;
+
+        .v-label {
+            top: -18px;
+            font-size: $fz-vsmall;
+            text-transform: uppercase;
+            color: $form-label-color;
+            line-height: $flh-medium;
+            letter-spacing: $fls-vsmall;
+            transform: none;
+            height: auto;
+        }
+
+        .v-select__slot > .v-select__selections > .v-select__selection {
+            padding: $form-field-paddings !important;
+            margin: 0;
+        }
+
+        .v-text-field__slot,
+        .v-select__slot {
+            border-radius: $form-field-radius;
+            box-shadow: 0 3px 14px 0 rgba(34, 31, 55, 0.08);
+            border: solid $form-field-border-width $form-field-border-color;
+            background-color: $clr-white;
+            font-size: $fz-small;
+
+            input {
+                padding: $form-field-paddings !important;
+                max-height: none;
+
+                &::-webkit-input-placeholder { /* WebKit browsers */
+                    font-style: italic;
+                }
+                &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    font-style: italic;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    font-style: italic;
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10+ */
+                    font-style: italic;
+                }
+            }
+
+            textarea {
+                padding: $form-field-paddings !important;
+            }
+        }
+
+        .v-input__slot {
+            padding-top: 18px;
+        }
+    }
+
+    &--no-label {
+        .v-input__slot {
+            padding-top: 0;
+        }
+    }
+
+    &--condition {
+        margin-top: $form-spacer * 2;
+    }
+
+    &--halved-margin {
+        margin-top: $form-spacer;
+    }
+
+    &--is-focused {
+        .v-label {
+            color: $form-field-focus-color;
+        }
+
+        &.v-input--custom-checkbox .v-label {
+            color: initial;
+        }
+
+        .v-text-field__slot,
+        .v-select__slot {
+            border-color: $form-field-focus-color;
+        }
+    }
+
+    &--with-submit-inside {
+        .v-input__append-inner {
+            position: absolute;
+            right: 0;
+            top: 5px;
+        }
+    }
+
+    &--hint-bold {
+        .v-messages__message {
+            font-weight: bold;
+        }
+    }
+
+    &--radio-group-custom {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0,0,0,.12);
+
+        &:last-of-type {
+            border: none;
+        }
+
+        .v-label {
+            font-size: 12px;
+            color: #0e2044;
+        }
+
+        .v-icon {
+            font-size: 14px;
+        }
+    }
+
+    &.error--text {
+        color: $clr-red;
+
+        .v-messages__message {
+            color: $clr-red;
+        }
+
+        .v-text-field__slot,
+        .v-select__slot {
+            border-color: $clr-red;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.v-expansion-panels {
+    &--front {
+        .v-expansion-panel {
+            border-radius: 2px !important;
+            margin-top: $s-spacer;
+
+            &:before {
+                box-shadow: 0 4px 18px 0 rgba(34, 31, 55, 0.1);
+            }
+
+            &:after {
+                display: none;
+            }
+
+            .v-expansion-panel-header {
+                background-color: $clr-white;
+                color: $clr-blue-minsk;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            &--active {
+                .v-expansion-panel-header {
+                    background-color: $clr-green !important;
+                    color: $clr-white;
+                    min-height: 48px;
+
+                    .v-icon {
+                        color: $clr-white !important;
+                    }
+                }
+            }
+        }
+    }
+}

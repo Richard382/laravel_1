@@ -1,0 +1,94 @@
+.checkbox-group {
+    $r: '.checkbox-group';
+
+    margin-top: $form-spacer;
+
+    &__label {
+        @include label-style;
+
+        &--error {
+            color: $clr-red;
+        }
+    }
+
+    &__sub-label {
+        @include label-style;
+
+        color: $clr-grey-darker;
+        margin-bottom: $l-spacer;
+
+        .current {
+            color: $clr-green;
+            font-weight: $fw-semi-bold;
+        }
+
+        .stepper {
+            & > span {
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__element {
+        background-color: $clr-white;
+        border-radius: $brdr-radius;
+        box-shadow: 0 4px 18px 0 rgba(34, 31, 55, 0.1);
+        padding: $l-spacer;
+    }
+
+    &__errors {
+        color: $clr-red;
+        font-size: $fz-small;
+    }
+
+    &__steps {
+        @include label-style;
+
+        font-weight: $fw-semi-bold;
+    }
+
+    &__info {
+        font-size: $fz-small;
+    }
+
+    &__bottom {
+        margin-top: $l-spacer;
+    }
+
+    &__next {
+        .v-btn {
+            min-width: 122px;
+            margin-top: 0;
+
+            &--flat {
+                color: $clr-grey-darker;
+                font-size: $fz-vsmall;
+            }
+        }
+    }
+
+    .v-input--selection-controls {
+        margin-top: 0;
+    }
+
+    &--done {
+        #{$r}__element {
+            background-color: $clr-grey-medium;
+        }
+
+        #{$r}__label {
+            font-weight: $fw-semi-bold;
+        }
+    }
+
+    &--error {
+        #{$r}__info,
+        #{$r}__label {
+            color: $clr-red;
+        }
+    }
+}

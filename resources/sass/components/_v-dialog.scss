@@ -1,0 +1,40 @@
+.v-dialog {
+    .v-btn--close-dialog {
+        $close-spacing: 15px;
+        position: absolute;
+        right: $close-spacing;
+        top: $close-spacing;
+        text-decoration: none !important;
+
+        .v-icon {
+            font-size: 30px;
+            height: 30px;
+            color: $clr-grey-darker;
+        }
+    }
+
+    .v-card {
+        .v-card__text,
+        .v-card__title {
+            color: $clr-blue-minsk;
+        }
+
+        .v-card__title {
+            padding-top: $l-spacer * 2;
+            padding-left: $l-spacer;
+            padding-right: $l-spacer;
+        }
+
+        .v-card__text {
+            padding: 0 $l-spacer $l-spacer;
+        }
+    }
+
+    &__text {
+        margin-top: $l-spacer;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
